@@ -1,62 +1,269 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
-  <title>ЧУП «МС СвифтЛог»</title>
-</head>
-<body>
-
-  <section class="header">
-    <div class="main">
-      <div class="container">
-        <div class="menu">
-          <span class="logo">ЧУП «МС СвифтЛог»</span>
-          <nav class="nav">
-            <a class="nav__link" href="#">ГЛАВНАЯ</a>
-            <a class="nav__link" href="#">ПРЕИМУЩЕСТВА</a>
-            <a class="nav__link" href="#">О КОМПАНИИ</a>
-            <a class="nav__link" href="#">УСЛУГИ</a>
-            <a class="nav__link" href="#">АВТОПАРК</a>
-            <a class="nav__link" href="#">КОНТАКТЫ</a>
-          </nav>
-          <a href="#" class="phone">+375162537050</a>
-          <button class="button menu__button">Заказать звонок</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>ЧУП «МС СвифтЛог»</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="main">
+        <div class="container">
+          <div class="menu">
+            <span class="logo">ЧУП «МС СвифтЛог»</span>
+            <nav class="nav">
+              <a class="nav__link" href="#">ГЛАВНАЯ</a>
+              <a class="nav__link" href="#">ПРЕИМУЩЕСТВА</a>
+              <a class="nav__link" href="#">О КОМПАНИИ</a>
+              <a class="nav__link" href="#">УСЛУГИ</a>
+              <a class="nav__link" href="#">АВТОПАРК</a>
+              <a class="nav__link" href="#">КОНТАКТЫ</a>
+            </nav>
+            <a href="#" class="phone">+375162537050</a>
+            <button class="button menu__button">Заказать звонок</button>
+          </div>
         </div>
       </div>
-    </div>
       <div class="hero">
         <div class="container">
           <div class="hero__content">
-            <h1 class="hero__header">Будем рады взаимовыгодному сотрудничеству</h1>
-            <span class="hero__description">Получите готовый расчёт ставки
-              в течение 15 минут после обращения</span>
+            <h1 class="hero__header">
+              Будем рады взаимовыгодному сотрудничеству
+            </h1>
+            <span class="hero__description"
+              >Получите готовый расчёт ставки в течение 15 минут после
+              обращения</span
+            >
             <div class="button-block">
               <button class="button hero__button">Рассчитать</button>
             </div>
           </div>
         </div>
       </div>
-  </section>
-  <section class="advantages">
-    <h2 class="advantages__header">НАШИ ПРЕИмущества</h2>
-    <div class="card">
-      <img src="" alt="" class="card__img">
-      <span class="card__text"></span>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <h2 class="title advantages__title">НАШИ ПРЕИмущества</h2>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="images/svg/map.svg"
+              alt="Выгодное месторасположение"
+              class="card__img"
+            />
+            <span class="card__text">Выгодное месторасположение</span>
+          </div>
+          <div class="card">
+            <img
+              src="images/svg/truck.svg"
+              alt="Собственный автопарк"
+              class="card__img"
+            />
+            <span class="card__text">Собственный<br> автопарк</span>
+          </div>
+          <div class="card">
+            <img
+              src="images/svg/insurance-2.svg"
+              alt="CMR-страхование перевозчика"
+              class="card__img"
+            />
+            <span class="card__text"><br>CMR-страхование перевозчика</span>
+          </div>
+          <div class="card">
+            <img
+              src="images/svg/insurance.svg"
+              alt="Страхование ответственности экспедитора"
+              class="card__img"
+            />
+            <span class="card__text"
+              >Страхование ответственности экспедитора</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="company">
+      <div class="container">
+        <h2 class="title company__title">О Компании</h2>
+        <div class="company__block">
+          <p class="company__description">Транспортно-логистическая компания «МС СвифтЛог» вот уже 5 лет представляет на рынке свои услуги. За это время
+          предприятие зарекомендовало себя как надежный партнер, профессионально выполняющий заказы любой сложности.</p>
+          <p class="company__description">«МС СвифтЛог» демонстрирует компетентность, профессионализм и способность адаптировать свои логистические структуры к
+          изменяющимся условиям.</p>
+          <p class="company__description">Уже два года имеем сертификаты «Органик-стандарт» и «BioSwis», - что дает возможность заниматься доставкой из Стран Азии
+          в Европу органической продукции.</p>
+          <p class="company__description">При перевозке сыпучих продуктов имеем возможность как принимать груз навалом, так и фасовать в биг-бэги с последующим
+          нанесением логотипа экспортера.</p>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <h2 class="title services__title">НАШи УСЛУГИ</h2>
+                <div class="cards services__cards">
+                  <div class="card services__card">
+                    <img src="images/svg/transport.svg" alt="Доставка грузов" class="card__img" />
+                    <span class="card__text services__card__text"><br>Доставка грузов автомобильным, железнодорожным, морским и авиа транспортом</span>
+                  </div>
+                  <div class="card services__card">
+                    <img src="images/svg/globus.svg" alt="Перевозка мультимодальных, негабаритных и опасных грузов из ЕВРОПЫ, Америки, Африки в страны Азии и СНГ и в обратном направлении, а также по СНГ и Азии." class="card__img" />
+                    <span class="card__text services__card__text"><br>Перевозка мультимодальных, негабаритных и опасных грузов из ЕВРОПЫ, Америки, Африки в страны Азии и СНГ и в обратном
+                    направлении, а также по СНГ и Азии.</span>
+                  </div>
+                  <div class="card services__card">
+                    <img src="images/svg/warehouse.svg" alt="CMR-страхование перевозчика" class="card__img" />
+                    <span class="card__text services__card__text"><br>Также предоставляем складские помещения (различных классов) в Чехии, Польше и Беларуси.</span>
+                  </div>
+                </div>
+      </div>
+    </section>
+    <section class="trucks">
+      <div class="container">
+        <h2 class="title trucks__title">Наш Автопарк</h2>
+        <span class="trucks__subtitle">В нашем парке имеются как собственные авто, так и привлеченные (с различной грузоподъемностью).</span>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/slider/image8.jpeg" alt="truck" class="trucks__slider">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider/image9.jpeg" alt="truck" class="trucks__slider">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider/image10.jpeg" alt="truck" class="trucks__slider">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider/image15.jpeg" alt="truck" class="trucks__slider">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider/image12.jpeg" alt="truck" class="trucks__slider">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider/image13.jpeg" alt="truck" class="trucks__slider">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider/image14.jpeg" alt="truck" class="trucks__slider">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2 class="title contact__title">КОНТАКТЫ</h2>
+      <div class="container">
+        <div class="contact__address">
+          <div class="contacts">
+
+            <div class="contacts__block">
+              <span class="contacts__title">Директор:</span>
+              <span class="contacts__subtitle">Михалев Сергей Александрович:</span>
+              <span class="contacts__number">+375295290932</span>
+            </div>
+
+            <div class="contacts__block">
+              <span class="contacts__title">Заместитель директора:</span>
+              <span class="contacts__subtitle">Голякевич Сергей Михайлович:</span>
+              <span class="contacts__number">+375297217085</span>
+            </div>
+
+            <div class="contacts__block">
+              <span class="contacts__title">Офис:</span>
+              <ul class="contacts__number">
+                <li class="number">+375162537050</li>
+                <li class="number">+375162321608</li>
+                <li class="number">+375295370535</li>
+                <li class="number">+375295579669</li>
+                <li class="number">+375295360535</li>
+              </ul>
+            </div>
+
+            <div class="contacts__block">
+              <span class="contacts__title">адрес электронной почты:</span>
+              <span class="contacts__number">
+                <img src="./images/svg/mail.svg" alt="email" class="contacts__img">msswiftlog@gmail.com</span>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="address">
+            <div class="address__block">
+              <span class="address__title">НАШ АДРЕС:</span>
+              <div class="address__subtitle">
+                <img src="./images/svg/marker.svg" alt="marker" class="address__marker">
+                <span class="address__name">224005 Республика Беларусь, г. Брест,
+                  ул. ГОБК 7, пом. 102</span>
+              </div>
+            </div>
+            <div class="map">
+              <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.272273632668!2d23.66759811577301!3d52.09297617553959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bc19267cbfd%3A0xbf795ec520c51502!2z0YPQuy4g0JPQtdGA0L7QtdCyINC-0LHQvtGA0L7QvdGLINCR0YDQtdGB0YLRgdC60L7QuSDQutGA0LXQv9C-0YHRgtC4IDcsINCR0YDQtdGB0YIgMjI0MDA1!5e0!3m2!1sru!2sby!4v1592839613339!5m2!1sru!2sby"
+                   allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            </div>
+          </div>
+        </div>
+        </div>     
+    </section>
+
+    <footer class="footer">
+            <div class="main">
+              <div class="container">
+                <div class="menu footer__menu">
+                  <span class="logo">ЧУП «МС СвифтЛог»</span>
+                  <nav class="nav">
+                    <a class="nav__link" href="#">ГЛАВНАЯ</a>
+                    <a class="nav__link" href="#">ПРЕИМУЩЕСТВА</a>
+                    <a class="nav__link" href="#">О КОМПАНИИ</a>
+                    <a class="nav__link" href="#">УСЛУГИ</a>
+                    <a class="nav__link" href="#">АВТОПАРК</a>
+                    <a class="nav__link" href="#">КОНТАКТЫ</a>
+                  </nav>
+                  <a href="#" class="phone">+375162537050</a>
+                  <button class="button menu__button">Заказать звонок</button>
+                </div>
+              </div>
+            </div>
+            </div>
+    </footer>
+
+
+    <div class="modal">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <img src="/images/svg/close.svg" alt="" class="modal__close-button">
+        </div>
+        <form action="#" class="modal__form">
+          <div class="modal__input-group">
+            <label class="modal__label">Ваше имя:</label>
+            <input class="modal__input" type="text" placeholder="Имя">
+          </div>
+    
+          <div class="modal__input-group">
+            <label class="modal__label">Ваш телефон:</label>
+            <input class="modal__input" type="text" placeholder="Телефон">
+          </div>
+    
+          <div class="modal__input-group">
+            <label class="modal__label">Ваш Email:</label>
+            <input class="modal__input" type="text" placeholder="Email">
+          </div>
+    
+          <div class="modal__button__block">
+            <div class="button modal__button">Отправить</div>
+          </div>
+      </div>
+      </form>
     </div>
-  </section>
 
-
-
-
-
-
-
-
-
-
-<script src="main.js"></script>
-</body>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
 </html>
