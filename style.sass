@@ -9,9 +9,9 @@ html
 body
 .header
   background-image: url('./images/main.png')
-  background-size: 100%
   background-repeat: no-repeat
   background-position: center 0.714rem
+  background-size: cover
 .main
   background-color: $blue
 .container
@@ -379,6 +379,10 @@ body
 @media screen and ( max-width: 1851px)
   html
     font-size: 10px
+.header
+  background-size: cover
+.company
+  background-size: cover
 @media screen and ( max-width: 1601px)
   html
     font-size: 12px
@@ -387,7 +391,7 @@ body
     font-size: 10px
 @media screen and ( max-width: 1201px)
   html
-    font-size: 9px
+    font-size: 8px
 @media screen and ( max-width: 992px)
   html
     font-size: 7px
@@ -419,15 +423,21 @@ body
   html
     font-size: 7px
   .container
-    max-width: 59.28rem
+    max-width: 52.28rem
   .hero
-    padding-bottom: 8rem
+    padding-bottom: 16rem
     &__description
       display: none
+  .company
+    background-size: cover
   .cards
     flex-wrap: wrap
-  .company
-    background-size: 200%
+  .card
+    display: flex
+    align-items: center
+    flex-direction: column
+    flex-basis: 100%
+    text-align: center
   .services__card
     flex-basis: 100%
   .trucks
@@ -448,7 +458,6 @@ body
     background-size: 190%
   .company
     display: none
-  .services
-    display: none
+
   .map
     width: 44.14rem
