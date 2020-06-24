@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <title>ЧУП «МС СвифтЛог»</title>
   </head>
   <body>
-    <section class="header">
+    <section class="header" id="header">
       <div class="main">
         <div class="container">
-          <div class="menu">
+          <div class="menu" id="menu">
             <a href="#" class="logo animate__backInDown animate__animated animate__delay-1s ">ЧУП «МС СвифтЛог»</a>
             <nav class="nav">
-              <a class="nav__link" href="#">ГЛАВНАЯ</a>
-              <a class="nav__link" href="#">ПРЕИМУЩЕСТВА</a>
-              <a class="nav__link" href="#">О КОМПАНИИ</a>
-              <a class="nav__link" href="#">УСЛУГИ</a>
-              <a class="nav__link" href="#">АВТОПАРК</a>
-              <a class="nav__link" href="#">КОНТАКТЫ</a>
+              <a class="nav__link" href="#header">ГЛАВНАЯ</a>
+              <a class="nav__link" href="#advantages">ПРЕИМУЩЕСТВА</a>
+              <a class="nav__link" href="#company">О КОМПАНИИ</a>
+              <a class="nav__link" href="#services">УСЛУГИ</a>
+              <a class="nav__link" href="#trucks">АВТОПАРК</a>
+              <a class="nav__link" href="#contact">КОНТАКТЫ</a>
             </nav>
             <a href="tel:+375162537050" class="phone animate__animated animate__bounce animate__delay-2s animate__repeat-3">+375162537050</a>
             <button class="button menu__button">Заказать звонок</button>
@@ -45,7 +46,7 @@
         </div>
       </div>
     </section>
-    <section class="advantages">
+    <section id="advantages" class="advantages">
       <div class="container">
         <h2 class="title advantages__title">НАШИ ПРЕИмущества</h2>
         <div class="cards">
@@ -86,7 +87,7 @@
         </div>
       </div>
     </section>
-    <section class="company">
+    <section id="company" class="company">
       <div class="container">
         <h2 class="title company__title">О Компании</h2>
         <div class="company__block">
@@ -101,7 +102,7 @@
         </div>
       </div>
     </section>
-    <section class="services">
+    <section id="services" class="services">
       <div class="container">
         <h2 class="title services__title">НАШи УСЛУГИ</h2>
                 <div class="cards services__cards">
@@ -121,7 +122,7 @@
                 </div>
       </div>
     </section>
-    <section class="trucks">
+    <section id="trucks" class="trucks">
       <div class="container">
         <h2 class="title trucks__title">Наш Автопарк</h2>
         <span class="trucks__subtitle">В нашем парке имеются как собственные авто, так и привлеченные (с различной грузоподъемностью).</span>
@@ -153,7 +154,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
       <h2 class="title contact__title">КОНТАКТЫ</h2>
       <div class="container">
         <div class="contact__address">
@@ -162,30 +163,38 @@
             <div class="contacts__block">
               <span class="contacts__title">Директор:</span>
               <span class="contacts__subtitle">Михалев Сергей Александрович:</span>
-              <span class="contacts__number">+375295290932</span>
+              <span class="contacts__number">
+                <a class="tel-number" href="tel:+375295290932">+375295290932</a></span>
             </div>
 
             <div class="contacts__block">
               <span class="contacts__title">Заместитель директора:</span>
               <span class="contacts__subtitle">Голякевич Сергей Михайлович:</span>
-              <span class="contacts__number">+375297217085</span>
+              <span class="contacts__number">
+                <a class="tel-number" href="tel:+375297217085">+375297217085</a></span>
             </div>
 
             <div class="contacts__block">
               <span class="contacts__title">Офис:</span>
               <ul class="contacts__number">
-                <li class="number">+375162537050</li>
-                <li class="number">+375162321608</li>
-                <li class="number">+375295370535</li>
-                <li class="number">+375295579669</li>
-                <li class="number">+375295360535</li>
+                <li class="number">
+                  <a class="tel-number" href="tel:+375162537050">+375162537050</a></li>
+                <li class="number">
+                  <a class="tel-number" href="tel:+375162321608">+375162321608</a></li>
+                <li class="number">
+                  <a class="tel-number" href="tel:+375295370535">+375295370535</a></li>
+                <li class="number">
+                  <a class="tel-number" href="tel:+375295579669">+375295579669</a></li>
+                <li class="number">
+                  <a class="tel-number" href="tel:+375295360535">+375295360535</a></li>
               </ul>
             </div>
 
             <div class="contacts__block">
               <span class="contacts__title">адрес электронной почты:</span>
               <span class="contacts__number">
-                <img src="./images/svg/mail.svg" alt="email" class="contacts__img">msswiftlog@gmail.com</span>
+                <img src="./images/svg/mail.svg" alt="email" class="contacts__img">
+                <a class="tel-number" href="mailto:msswiftlog@gmail.com">msswiftlog@gmail.com</a> </span>
             </div>
           </div>
 
@@ -216,15 +225,15 @@
     <footer class="footer">
             <div class="main">
               <div class="container">
-                <div class="menu footer__menu">
+                <div class="menu footer__menu" id="footer-menu">
                   <a href="#" class="logo">ЧУП «МС СвифтЛог»</a>
                   <nav class="nav">
-                    <a class="nav__link" href="#">ГЛАВНАЯ</a>
-                    <a class="nav__link" href="#">ПРЕИМУЩЕСТВА</a>
-                    <a class="nav__link" href="#">О КОМПАНИИ</a>
-                    <a class="nav__link" href="#">УСЛУГИ</a>
-                    <a class="nav__link" href="#">АВТОПАРК</a>
-                    <a class="nav__link" href="#">КОНТАКТЫ</a>
+                    <a class="nav__link" href="#header">ГЛАВНАЯ</a>
+                    <a class="nav__link" href="#advantages">ПРЕИМУЩЕСТВА</a>
+                    <a class="nav__link" href="#company">О КОМПАНИИ</a>
+                    <a class="nav__link" href="#services">УСЛУГИ</a>
+                    <a class="nav__link" href="#trucks">АВТОПАРК</a>
+                    <a class="nav__link" href="#contacts">КОНТАКТЫ</a>
                   </nav>
                   <a href="tel:+375162537050" class="phone">+375162537050</a>
                   <button class="button menu__button">Заказать звонок</button>
@@ -240,29 +249,29 @@
         <div class="modal__close">
           <img src="/images/svg/close.svg" alt="" class="modal__close-button">
         </div>
-        <form action="#" class="modal__form">
+        <form action="send.php" method="POST" class="modal__form">
           <div class="modal__input-group">
             <label class="modal__label">Ваше имя:</label>
-            <input class="modal__input" type="text" placeholder="Имя">
+            <input class="modal__input input__name" type="text" name="userName" id="user-name" placeholder="Имя">
           </div>
     
           <div class="modal__input-group">
             <label class="modal__label">Ваш телефон:</label>
-            <input class="modal__input" type="text" placeholder="Телефон">
+            <input class="modal__input input__phone" type="tel" name="userPhone" id="user-phone" placeholder="Телефон">
           </div>
     
           <div class="modal__input-group">
             <label class="modal__label">Ваш Email:</label>
-            <input class="modal__input" type="text" placeholder="Email">
+            <input class="modal__input input__mail" type="email" name="userEmail" id="user-email" placeholder="Email">
           </div>
     
           <div class="modal__button__block">
-            <div class="button modal__button">Отправить</div>
+            <button type="submit" class="button modal__button">Отправить</button>
           </div>
       </div>
       </form>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="main.js"></script>
     

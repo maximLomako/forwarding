@@ -506,6 +506,7 @@ html {
       -ms-flex-pack: end;
           justify-content: flex-end;
   background: #4D6D89;
+  cursor: pointer;
 }
 
 .modal__close-button {
@@ -556,6 +557,12 @@ html {
 
 .modal__button__block {
   margin: 0 3.714rem;
+}
+
+.tel-number {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1851px) {
